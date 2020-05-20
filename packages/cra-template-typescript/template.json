@@ -1,5 +1,10 @@
 {
   "package": {
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn lint && yarn test"
+      }
+    },
     "dependencies": {
       "@testing-library/jest-dom": "^5.5.0",
       "@testing-library/react": "^10.0.4",
@@ -8,7 +13,8 @@
       "@types/react": "^16.9.0",
       "@types/react-dom": "^16.9.0",
       "@types/jest": "^25.0.0",
-      "typescript": "^3.8.0"
+      "typescript": "^3.8.0",
+      "husky": "^4.2.5"
     }
   }
 }
